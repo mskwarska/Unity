@@ -93,3 +93,39 @@ crashlytics-build.properties
 /Lab5/Assets/Materials/purple.mat.meta
 /Lab5/Assets/Materials/pink.mat.meta
 /Lab5/Assets/Materials/grey.mat.meta
+/Game2D/Temp
+/Game2D/ProjectSettings
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Assets/Images
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Assets/Layouts
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/AssetOverlays
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/AssetsUtils
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Assets/Styles/PlasticWindow/PlasticWindow.dark.uss
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Beta/CalculateUserBetaProgramSetting.cs
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Assets/Styles
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Beta
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/CloudProjectDownloader
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Configuration/CloudEdition/Welcome/AutoLogin.cs
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Configuration
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Developer/UpdateReport
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Developer
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Gluon
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Editor/PlasticSCM/Help
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Tests/Editor/PlasticSCM/Views/IncomingChanges
+/Game/New Unity Project/Library/Artifacts
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Documentation~/images
+/Game/New Unity Project/Library/PackageCache/com.unity.collab-proxy@1.10.2/Documentation~/ExistingPlasticRepo.md
+/Game/New Unity Project/Library/PackageCache
+/Game/New Unity Project/Library/ScriptAssemblies
+/Game/New Unity Project/Library/ShaderCache
+/Game/New Unity Project/Library/StateCache
+/Game/New Unity Project/Library/AnnotationManager
+/Game/New Unity Project/ProjectSettings
+/Game/New Unity Project/Library/APIUpdater
+/Game/New Unity Project/Library
+/Game/New Unity Project/Logs
+/Game/New Unity Project/Packages
+*.vsconfig
+/Game2D/Library
+/Game2D/Logs
+/Game2D/Packages
+/Game2D/obj/Debug
