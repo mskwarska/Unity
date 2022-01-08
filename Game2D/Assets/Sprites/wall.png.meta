@@ -59,6 +59,9 @@ TextureImporter:
   - first:
       213: -4640043791281479442
     second: wall_18
+  - first:
+      213: 1755458522911007365
+    second: wall_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -542,6 +545,27 @@ TextureImporter:
       bones: []
       spriteID: ee0296e71c04b9fb0800000000000000
       internalID: -4640043791281479442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 638
+        width: 58
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582ea0cc934ac5810800000000000000
+      internalID: 1755458522911007365
       vertices: []
       indices: 
       edges: []
