@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class Movement : MonoBehaviour
     private Animator animat;
     private bool grounded;
 
-    //Avoid automatycznie
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -54,5 +54,8 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
             grounded = true;
+
+        
     }
+   
 }
