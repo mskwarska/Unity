@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float speed;
     private Animator animat;
     private bool grounded;
-
+    private int horizontal;
 
     private void Awake()
     {
@@ -58,5 +58,4 @@ public class Movement : MonoBehaviour
 
         
     }
-   
 }

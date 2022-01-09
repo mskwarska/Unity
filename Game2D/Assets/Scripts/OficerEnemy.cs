@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OficerEnemy : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
+    [SerializeField] private float attact;
     [SerializeField] private float range;
     [SerializeField] private int damage;
 
@@ -15,14 +15,12 @@ public class OficerEnemy : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
 
     //References
-    private Animator anim;
+    private Animator animator;
     private Health playerHealth;
-    //private EnemyPatrol enemyPatrol;
 
     private void Awake()
     {
-        anim = GetComponent<Animator>();
-        //enemyPatrol = GetComponentInParent<EnemyPatrol>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -30,13 +28,13 @@ public class OficerEnemy : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
 
-        //Attack only when player in sight?
+        //oficer atakuje kiedy blisko jest Player
         if (PlayerInSight())
         {
-            if (cooldownTimer >= attackCooldown)
+            if (cooldownTimer >= attact)
             {
                 cooldownTimer = 0;
-                anim.SetTrigger("OficerAttact");
+                animator.SetTrigger("OficerAttact");
             }
         }
     }
