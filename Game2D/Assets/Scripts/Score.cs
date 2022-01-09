@@ -5,6 +5,7 @@ public class Score : MonoBehaviour
 {
     public Text ScoreText;
     private int chestScore;
+    [SerializeField] private AudioClip chestSound;
 
     void Start()
     {
@@ -17,9 +18,17 @@ public class Score : MonoBehaviour
     {
         if (collision.tag == "Chest")
         {
+            SoundManager.instance.PlaySound(chestSound);
             chestScore += 1;
             Destroy(collision.gameObject);
-            ScoreText.text = "Chests: " + chestScore;
+            ScoreText.text = "Chests: " + chestScore +"/50";
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag.Equals("Chest"))
+        {
+            SoundManager.instance.PlaySound(chestSound);//nie wiem czy tu potrzebne ?
         }
     }
 }

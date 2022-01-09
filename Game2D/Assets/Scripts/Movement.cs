@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     private Animator animat;
     private bool grounded;
 
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -24,7 +25,7 @@ public class Movement : MonoBehaviour
         grounded = true;
         float horizonatal = Input.GetAxis("Horizontal");
 
-        body.velocity = new Vector2(horizonatal, body.velocity.y);
+        body.velocity = new Vector2(horizonatal * speed, body.velocity.y);
 
         //zmiana kierunku poruszania w zale¿noœci od naciœniêtej strza³ki
         if (horizonatal > 0.01f)
@@ -45,7 +46,7 @@ public class Movement : MonoBehaviour
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, speed/3);//skok
+        body.velocity = new Vector2(body.velocity.x, speed);//skok
         animat.SetTrigger("jump");
         grounded = false;
 
