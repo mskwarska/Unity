@@ -25,4 +25,11 @@ public class PlayerSwordAttact : MonoBehaviour
         animator.SetTrigger("attact");
         cooldownTimer = 0;
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("EnemyDog"))
+        {
+            collision.collider.GetComponent<Health>().TakeDamage(1);
+        }
+    }
 }

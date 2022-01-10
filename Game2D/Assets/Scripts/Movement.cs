@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+
         grounded = true;
         float horizonatal = Input.GetAxis("Horizontal");
 
