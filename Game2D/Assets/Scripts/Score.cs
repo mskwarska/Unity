@@ -21,15 +21,7 @@ public class Score : MonoBehaviour
             SoundManager.instance.PlaySound(chestSound);
             chestScore += 1;
             Destroy(collision.gameObject);
-            //ScoreText.text = "Chests: " + chestScore +"/50";
             ScoreText.text = chestScore.ToString();
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag.Equals("Chest"))
-        {
-            SoundManager.instance.PlaySound(chestSound);//nie wiem czy tu potrzebne ?
         }
     }
 }
