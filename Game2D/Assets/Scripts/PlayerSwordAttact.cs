@@ -4,6 +4,7 @@ public class PlayerSwordAttact : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
 
+    BoxCollider2D boxCollider;
     private Animator animator;
     private float cooldownTimer = Mathf.Infinity;
 
@@ -29,7 +30,8 @@ public class PlayerSwordAttact : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("EnemyDog"))
         {
-            collision.collider.GetComponent<Health>().TakeDamage(1);
+            animator.SetTrigger("attact");
+            collision.collider.GetComponent<HealthEnemy>().TakeDamage(1);
         }
     }
 }

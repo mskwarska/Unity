@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class Health : MonoBehaviour
+public class HealthEnemy : MonoBehaviour
 {
     [SerializeField] private float startHealth;
     private bool isDead;
@@ -21,7 +18,6 @@ public class Health : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startHealth); // zabezpieczenie przed ustawieniem wartoœci poni¿ej zera lub powy¿ej pocz¹tkowych ¿yæ
-        Debug.Log("OficerHealth  - 1 ");
 
         if (currentHealth > 0)
         {
@@ -29,10 +25,12 @@ public class Health : MonoBehaviour
         }
         else
         {
-            Debug.Log("OficerHealth < 0");
+            Debug.Log("enemyhealth < 0");
             //game over
             HealthCount.text = "Health:" + currentHealth + "/" + startHealth;
-            SceneManager.LoadScene(2);
+            Destroy(gameObject);
+
+            //GetComponent<OficerEnemy>().enabled = false;
             isDead = true;
         }
     }

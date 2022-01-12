@@ -9,7 +9,6 @@ public class Score : MonoBehaviour
 
     void Start()
     {
-        //ScoreText = GetComponent<Text>();
         chestScore = 0;
         ScoreText.text = chestScore.ToString();
     }

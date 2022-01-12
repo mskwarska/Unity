@@ -33,8 +33,8 @@ public class OficerEnemy : MonoBehaviour
         {
             if (cooldownTimer >= attact)
             {
-                cooldownTimer = 0;
-                animator.SetTrigger("OficerAttact");
+                cooldownTimer = 5;
+                animator.SetTrigger("OficerAttact"); 
             }
         }
     }
@@ -53,14 +53,15 @@ public class OficerEnemy : MonoBehaviour
 
     private void DamagePlayer()
     {
-        if (PlayerInSight())
-            playerHealth.TakeDamage(damage);
+        //if (PlayerInSight())
+            //playerHealth.TakeDamage(damage);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
+            Debug.Log("oficer zabiera  zycie kapitanoiw");
             collision.collider.GetComponent<Health>().TakeDamage(damage);
         }
     }

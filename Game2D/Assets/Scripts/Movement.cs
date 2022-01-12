@@ -17,8 +17,6 @@ public class Movement : MonoBehaviour
         animat = GetComponent<Animator>();
     }
 
-
-
     // Update is called once per frame
     private void Update()
     {
@@ -34,7 +32,7 @@ public class Movement : MonoBehaviour
         else if (horizonatal < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        //skok
+        
         if(Input.GetKey(KeyCode.Space) && grounded)
             Jump();
 
