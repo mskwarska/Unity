@@ -20,8 +20,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currentHealth = Mathf.Clamp(currentHealth - damage, 0, startHealth); // zabezpieczenie przed ustawieniem wartoœci poni¿ej zera lub powy¿ej pocz¹tkowych ¿yæ
-        Debug.Log("OficerHealth  - 1 ");
+        currentHealth = Mathf.Clamp(currentHealth - damage, 0, startHealth);
 
         if (currentHealth > 0)
         {
@@ -29,7 +28,6 @@ public class Health : MonoBehaviour
         }
         else
         {
-            Debug.Log("OficerHealth < 0");
             //game over
             HealthCount.text = "Health:" + currentHealth + "/" + startHealth;
             SceneManager.LoadScene(2);

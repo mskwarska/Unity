@@ -26,7 +26,6 @@ public class Movement : MonoBehaviour
 
         body.velocity = new Vector2(horizonatal * speed, body.velocity.y);
 
-        //zmiana kierunku poruszania w zale¿noœci od naciœniêtej strza³ki
         if (horizonatal > 0.01f)
             transform.localScale = Vector3.one;
         else if (horizonatal < -0.01f)
@@ -38,14 +37,13 @@ public class Movement : MonoBehaviour
 
 
 
-        //Set aminatior param
         animat.SetBool("run", horizonatal != 0); // !=0 False
-        animat.SetBool("grounded", grounded); // jeœli jest ziemi¹ to mo¿na skoczyæ
+        animat.SetBool("grounded", grounded);  
     }
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, speed);//skok
+        body.velocity = new Vector2(body.velocity.x, speed);
         animat.SetTrigger("jump");
         grounded = false;
 

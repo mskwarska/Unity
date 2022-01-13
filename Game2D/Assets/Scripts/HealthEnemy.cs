@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class HealthEnemy : MonoBehaviour
 {
     [SerializeField] private float startHealth;
-    private bool isDead;
 
     public float currentHealth { get; private set; }
     public Text HealthCount;
@@ -12,7 +11,6 @@ public class HealthEnemy : MonoBehaviour
     private void Awake()
     {
         currentHealth = startHealth;
-        isDead = false;
     }
 
     public void TakeDamage(float damage)
@@ -26,12 +24,8 @@ public class HealthEnemy : MonoBehaviour
         else
         {
             Debug.Log("enemyhealth < 0");
-            //game over
             HealthCount.text = "Health:" + currentHealth + "/" + startHealth;
             Destroy(gameObject);
-
-            //GetComponent<OficerEnemy>().enabled = false;
-            isDead = true;
         }
     }
 }

@@ -28,7 +28,6 @@ public class OficerEnemy : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
 
-        //oficer atakuje kiedy blisko jest Player
         if (PlayerInSight())
         {
             if (cooldownTimer >= attact)
@@ -51,12 +50,7 @@ public class OficerEnemy : MonoBehaviour
         return hit.collider != null; // true jeœli collider jest ró¿ny od null
     }
 
-    private void DamagePlayer()
-    {
-        //if (PlayerInSight())
-            //playerHealth.TakeDamage(damage);
-    }
-
+   
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
